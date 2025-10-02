@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(2 67 64);
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(47 95 92);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.rightNav a {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    padding: 2px; 
+}
+.rightNav a:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+.leftNav {
+    font-size: 1.5rem;
+}
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0px;
+    /* height: 400px; */
+    /* flex-wrap: wrap; */
+  }
+  .leftFirst {
+    /* background-color: black; */
+    width: 40%;
+    max-width: 400px;
+    height: 300px;
+    /* font-size: 1.2em; */
+    /* margin: 0px 100px; */
+    position: relative;
+    border-radius: 5%;
+  }
+  .leftText {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      color: #64cfff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+      /* z-index: 100; */
+  }
+  .leftText div:first-child {
+      font-size: 2.1em;
+      font-weight: bold;
+      color: white;
+  }
+  .leftText div:last-child {
+      font-size: 1.6em;
+      font-style: italic;
+      color: #64cfff;
+  }
+  .rightFirst {
+    background-color: black;
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 48%;
+    /* position: relative; */
+  } 
+  .rightFirst img {
+    /* margin: auto; */
+    /* width: 100%; */
+    opacity: 0.7;
+    border-radius: 48%;
+    /* transition: transform 0.4s ease, opacity 0.4s ease; */
+}
+.rightFirst:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+    border: 1px solid white;
+}
+/* .leftText {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+} */
+hr {
+    max-width: 1100px;
+    width: auto;
+    /* text-align: center; */
+    margin: 0px 89px;
+}
+.aboutSection {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #64cfff;
+}
+.aboutSection p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.skillsSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+.skillsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.skill {
+  background: #2f5f5c;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  /* transition: 0.3s; */
+}
+.skill:hover {
+  background: #64cfff;
+  color: black;
+  /* transform: scale(1.1); */
+}
+.projectsSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+.projectGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.projectCard {
+  background: #000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  /* transition: 0.3s; */
+}
+.projectCard:hover {
+  background: #64cfff;
+  color: black;
+  transform: translateY(-10px);
+}
+.contactSection {
+  padding: 40px 20px;
+  text-align: center;
+}
+.contactSection a {
+  color: #64cfff;
+  text-decoration: none;
+}
+.contactSection a:hover {
+  text-decoration: underline;
+}
+footer {
+  background: #2f5f5c;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .rightNav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rightNav a {
+    display: block;
+
+  }
+   .firstSection {
+    flex-direction: column;
+    margin: 20px 0;
+    /* gap: 20px; */
+  }
+  .leftFirst, .rightFirst {
+    width: 90%;
+    max-width: 500px;
+    /* height: auto; */
+    /* margin: 10px 0; */
+    margin: auto;
+  }
+  .leftText {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+   .skillsGrid, .projectGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill, .projectCard {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+    .leftNav {
+        font-size: 1.2em;
+    }
+    .leftText {
+        font-size: 0.8em;
+    }
+    /* hr {
+      width: 250px;
+    } */
+}
+
