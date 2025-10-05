@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 </head>
- 
+
 <body>
     <nav>
         <div class="leftNav">Om's Portfolio</div>
@@ -27,10 +27,8 @@
 
     <section id="home" class="firstSection">
         <div class="leftFirst">
-            <div class="leftText">
-                <div>Hi, I am Om Rajput</div>
-                <div>and I am Passionate Web Developer</div>
-            </div>
+            <div>Hi, I am Om Rajput</div>
+            <div>and I am Passionate Web Developer</div>
         </div>
         <div class="rightFirst">
             <img src="om.jpeg" alt="" width="100%" height="100%">
@@ -38,46 +36,122 @@
     </section>
 
     <hr>
- 
+
     <section id="about" class="aboutSection">
-        <h2>About Me</h2> 
-        <p>
-            I am Om Rajput, a passionate web developer who enjoys building clean,
-            user-friendly, and responsive websites. I love learning new technologies
-            and solving real-world problems with code.
-        </p>
+        <h2>About Me</h2>
+        <ul>
+            <li>
+                <p>
+                    Hello! I am Om Rajput, an aspiring web developer from Ahmedabad, India. I started my coding journey
+                    because I enjoy creating things people can use. My goal is to master the fundamentals of web
+                    development and then grow into full-stack technologies.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Apart from coding, I am passionate about technology, design, and problem-solving. I love learning
+                    new tools
+                    and experimenting with different website layouts and animations. When I am not coding, I enjoy
+                    exploring
+                    startups, reading about tech trends, and playing outdoor games.
+                </p>
+            </li>
+        </ul>
+
     </section>
+
+    <hr>
 
     <section id="skills" class="skillsSection">
         <h2>My Skills</h2>
         <div class="skillsGrid">
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">Java</div>
-            <div class="skill">Problem Solving</div>
-            <div class="skill">Responsive Design</div>
+            <div class="skill">
+                <img src="html&css.png" alt="HTML & CSS">
+                <p>HTML & CSS</p>
+            </div>
+            <div class="skill">
+                <img src="java.webp" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="problem.png" alt="Problem Solving">
+                <p>Problem Solving</p>
+            </div>
+            <div class="skill">
+                <img src="responsive.avif" alt="Responsive Design">
+                <p>Responsive Design</p>
+            </div>
         </div>
-    </section> 
+    </section>
+
+
+    <hr>
 
     <section id="projects" class="projectsSection">
         <h2>Projects</h2>
         <div class="projectGrid">
             <div class="projectCard">
+                <img src="portfolio.png" alt="Portfolio Website">
                 <h3>Portfolio Website</h3>
-                <p>A personal portfolio built with HTML & CSS.</p>
+                <p>A personal portfolio built with HTML & CSS. It showcases my skills, projects, and contact details.
+                </p>
             </div>
             <div class="projectCard">
+                <img src="calculator.jpg" alt="Calculator App">
                 <h3>Calculator App</h3>
-                <p>A simple calculator made with Java.</p>
+                <p>A simple calculator made with Java that performs basic arithmetic operations.</p>
+            </div>
+            <div class="projectCard">
+                <img src="rock.webp" alt="Rock-Paper-Scissors">
+                <h3>Rock Paper Scissors</h3>
+                <p>A fun Python game where the user can play Rock, Paper, Scissors against the computer with random
+                    choices.</p>
             </div>
         </div>
     </section>
 
+
+    <hr>
+
     <section id="contact" class="contactSection">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/omrajput</a></p>
-        <p>GitHub: <a href="#">github.com/omrajput</a></p>
+
+        <div class="contactLinks">
+            <a href="mailto:youremail@example.com" target="_blank">
+                <img src="email.jpg" alt="Email">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="linkdin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+        </div>
+
+        <form class="contactForm">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Send Message</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </section>
+
 
     <footer>
         <p>© 2025 Om Rajput | All Rights Reserved</p>
